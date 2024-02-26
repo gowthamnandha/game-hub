@@ -1,0 +1,48 @@
+.product-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+    /* Add margin between product cards */
+    margin-bottom: 20px;
+    /* Add margin below product cards */
+}
+
+.product-container:last-child {
+    margin-right: 0;
+    /* Remove margin for the last product card */
+}
+
+.product-image {
+    width: 100px;
+    /* Set fixed width for the image */
+    height: auto;
+    /* Allow height to adjust according to aspect ratio */
+    object-fit: contain;
+    /* Maintain aspect ratio without cropping */
+    margin-right: 10px;
+    /* Add space between image and details */
+}
+
+.product-details {
+    flex: 1;
+    /* Allow details to grow and fill remaining space */
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #007185;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    color: #555;
+    font-size: 1rem;
+}
