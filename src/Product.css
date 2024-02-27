@@ -14,11 +14,14 @@
 }
 
 .product-image {
-    width: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    width: fit-content;
     /* Set fixed width for the image */
-    height: auto;
+    height: 100%;
     /* Allow height to adjust according to aspect ratio */
-    object-fit: contain;
+    object-fit: 50px;
     /* Maintain aspect ratio without cropping */
     margin-right: 10px;
     /* Add space between image and details */

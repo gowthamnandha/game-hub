@@ -1,6 +1,7 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Grid, GridItem, HStack } from "@chakra-ui/react";
 import Product from "./Product";
+import "./App.css";
 
 interface ProductData {
   id: number;
@@ -8,6 +9,7 @@ interface ProductData {
   description: string;
   price: string;
   image: string;
+  category: string;
 }
 
 function App() {
@@ -29,10 +31,18 @@ function App() {
         }}
         className="grid"
       >
-        <GridItem pl="2" className="nav" area={"nav"}>
+        <GridItem
+          pl="2"
+          className="nav"
+          area={"nav"}
+          bg="gray.100"
+          p="4"
+          borderRadius="md"
+        >
           <h5>E-commerce store</h5>
         </GridItem>
-        <GridItem pl="2" className="main" area={"main"}>
+
+        <GridItem pl="2" className="main" area={"main"} justifyContent="center">
           <HStack spacing="20px" justifyContent="flex-start" flexWrap="wrap">
             {products.map((product) => (
               <Product
